@@ -1,0 +1,3 @@
+[submodule "CameraCalibration"]
+	path = CameraCalibration
+	url = https://github.com/niconielsen32/CameraCalibration.git

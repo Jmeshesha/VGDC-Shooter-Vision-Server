@@ -30,14 +30,3 @@
 *.exe
 *.out
 *.app
-
-# Built app
-build/*
-
-
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json

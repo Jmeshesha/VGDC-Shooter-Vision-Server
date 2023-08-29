@@ -4,20 +4,19 @@
 #include <iostream>
 #include <asio.hpp>
 #include <opencv2/core/cuda.hpp>
+#include "Client.h"
 
-#define ADDRESS "170.0.0.1"
-#define PORT 20
-
-int main()
-{
-    // std::cout << "Hello World!\n";
-    // asio::error_code ec;
-    // asio::io_context context;
-    // 
-    // asio::ip::udp::endpoint endpoint(asio::ip::make_address(ADDRESS, ec), PORT);
-    cv::cuda::printCudaDeviceInfo(0);
-
+int main() {
+  // std::cout << "Hello World!\n";
+  // asio::error_code ec;
+  // asio::io_context context;
+  //
+  // asio::ip::udp::endpoint endpoint(asio::ip::make_address(ADDRESS, ec),
+  // PORT);
+  CameraMarkerServer::Client client;
+  client.Run();
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
